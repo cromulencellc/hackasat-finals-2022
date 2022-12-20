@@ -1,0 +1,21 @@
+<% 
+  require 'osk_config' 
+
+  @APP_PREFIX_STR = "PUZZLE_BOX"
+  @HK_TLM_MID_STR = "PUZZLE_BOX_HK_TLM_MID"  # Replace with your app's MID defined in message_ids.rb
+  @TOK_TLM_MID_STR = "PUZZLE_BOX_TOK_TLM_MID"  # Replace with your app's MID defined in message_ids.rb 
+%>
+
+TELEMETRY PUZZLE_BOX HK_TLM_PKT <%= Osk::Cfg.processor_endian %> "PUZZLE_BOX App"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @HK_TLM_MID_STR) %>
+  APPEND_ITEM CMD_VALID_COUNT 16 UINT "Count of valid commands received since startup or the last reset counter command"
+  APPEND_ITEM CMD_ERROR_COUNT 16 UINT "Count of invalid commands received since startup or the last reset counter command"
+  
+TELEMETRY PUZZLE_BOX STATUS_TLM_PKT <%= Osk::Cfg.processor_endian %> "PUZZLE_BOX App"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @TOK_TLM_MID_STR) %>
+  APPEND_ITEM STATUS      800 STRING "Current Status"
+  APPEND_ITEM STAGE_1     800 STRING "Stage 1 Status"
+  APPEND_ITEM STAGE_2     800 STRING "Stage 2 Status"
+  APPEND_ITEM STAGE_3     800 STRING "Stage 3 Status"
+  APPEND_ITEM STAGE_4     800 STRING "Stage 4 Status"
+  APPEND_ITEM TOKEN       800 STRING "a token"

@@ -1,0 +1,23 @@
+game:
+  start_time: "2021-12-01 12:00:00"
+satellites:
+  - name: "testSat1"
+  - name: "testSat2"
+groundstations:
+  - name: "the outer rim"
+    location:
+      latitude: 28.079468172573556
+      longitude: -80.60838997364046
+      altitude: 10
+    access:
+      type: "specificuser"
+      user: "swood"
+  - name: "denver office"
+    location:
+      latitude: 39.75784700067639
+      longitude: -105.22069931030273
+      altitude: 1729
+    access:
+      type: "specificuser"
+      user: "mike"
+

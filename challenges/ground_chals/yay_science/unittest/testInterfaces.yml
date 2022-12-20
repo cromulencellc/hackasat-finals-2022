@@ -1,0 +1,6 @@
+rabbit:
+  hostname: "localhost"
+  port: 10000
+  username: "test"
+  password: "passwd"
+  exchange: "main"

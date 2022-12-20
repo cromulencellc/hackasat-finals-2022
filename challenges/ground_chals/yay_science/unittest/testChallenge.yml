@@ -1,0 +1,8 @@
+settings:
+  minDuration: 600
+  maxDuration: 1000
+  windowDelay: 600
+  windowLength: 3600
+  accuracyDegrees: 5
+  axis: [1,0,0]
+  generatePeriod: 1000

@@ -1,0 +1,3 @@
+*.pyc
+sat_challenge_3_rop/fsw/
+sat_challenge_3_rop/riscv*

@@ -1,0 +1,23 @@
+settings:
+  broadcastPeriod: 60
+  minDuration: 350
+  maxDuration: 450
+  windowDelay: 600
+  windowLength: 10000
+  accuracyDegrees: 7.5
+  axis: [0,0,1]
+  generatePeriod: 1800
+  radio:
+    access_bytes: [0x06, 0xFC, 0x3C, 0x69, 0xA1, 0xBE, 0xCF, 0xA1]
+    constellation: "QPSK"
+    samples_per_symbol: 4
+    fec_repeat: 4
+    channel_id: 15
+  planets:
+    - "mercury"
+    - "venus"
+    - "mars"
+    - "jupiter"
+    - "saturn"
+    - "neptune"
+    - "uranus"

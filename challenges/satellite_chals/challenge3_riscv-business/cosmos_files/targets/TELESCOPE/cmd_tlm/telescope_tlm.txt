@@ -1,0 +1,34 @@
+<% 
+  require 'osk_config' 
+
+  @APP_PREFIX_STR     = "TELESCOPE"
+  @EXPOSURE_TLM_STR   = "TELESCOPE_EXPOSURE_TLM_MID"
+  @MISSION_TLM_STR    = "TELESCOPE_MISSION_TLM_MID"
+  @HK_TLM_STR         = "TELESCOPE_HK_TLM_MID"
+
+%>
+
+TELEMETRY TELESCOPE EXPOSURE <%= Osk::Cfg.processor_endian %> "Exposure Packet"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @EXPOSURE_TLM_STR) %>
+  APPEND_ITEM EXPOSURE_NUMBER    16  UINT "Exposure Number"
+  APPEND_ITEM SUBMITTED_BY       240  STRING "This team gets awarded points!"
+  APPEND_ITEM DATA              1216 STRING "The raw data of the exposure"
+  APPEND_ITEM FUN               200 STRING "A fun science message (not used in scoring)"
+
+TELEMETRY TELESCOPE MISSION <%= Osk::Cfg.processor_endian %> "Mission Description Packet"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @MISSION_TLM_STR) %>
+  APPEND_ITEM MISSION_ID    16  UINT "Mission Number"
+  APPEND_ITEM DURATION      16 UINT "Duration of continuous pointing required (secs)"
+  APPEND_ITEM PLANET          200 STRING "Point at this planet"
+  APPEND_ITEM START_WINDOW          160 STRING "All pointing must occur after this timestamp (UTC)"
+  APPEND_ITEM STOP_WINDOW          160 STRING "All poitnint must occur before this timestamp (UTC)"
+
+TELEMETRY TELESCOPE HOUSEKEEPING <%= Osk::Cfg.processor_endian %> "Telescope Housekeeping Packet"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @HK_TLM_STR) %>
+  APPEND_ARRAY_ITEM MISSIONS 16 UINT 1200 "Available missions"
+  APPEND_ARRAY_ITEM EXPOSURES 16 UINT 1200 "Available exposures"
+  APPEND_ARRAY_ITEM BLK_MISSION_LIST 8 UINT 208 "Bulk Mission List"
+  APPEND_ITEM MSG_INVALID_COUNT 16 UINT "Count of invalid messages received since startup or the last reset counter command"
+  APPEND_ITEM CMD_INVALID_COUNT 16 UINT "Count of invalid commands received since startup or the last reset counter command"
+
+

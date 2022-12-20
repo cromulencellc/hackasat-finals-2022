@@ -1,0 +1,204 @@
+game:
+  start_time: "2023-01-01 00:00:00.000"
+  stop_time:  "2023-01-01 23:03:00.000"
+
+# GROUND STATIONS
+groundstations:
+  cromulans_svalbard:
+    latitude: 78.23
+    longitude: 15.37
+    altitude: 0
+  cromulans_mcmurdo:
+    latitude: -77.83
+    longitude: 166.68
+    altitude: 0
+  poland_svalbard:
+    latitude: 78.23
+    longitude: 15.37
+    altitude: 0
+  spacebits_svalbard:   
+    latitude: 78.23
+    longitude: 15.37
+    altitude: 0
+  organizers_svalbard:
+    latitude: 78.23
+    longitude: 15.38
+    altitude: 0
+  perfectblue_svalbard:
+    latitude: 78.23
+    longitude: 15.39
+    altitude: 0
+  samurai_svalbard:
+    latitude: 78.23
+    longitude: 15.40
+    altitude: 0
+  poland_svalbard:
+    latitude: 78.23
+    longitude: 15.41
+    altitude: 0
+  singleevent_svalbard:
+    latitude: 78.23
+    longitude: 15.42
+    altitude: 0
+  solarwine_svalbard:
+    latitude: 78.23
+    longitude: 15.43
+    altitude: 0
+  weltalles_svalbard:
+    latitude: 78.23
+    longitude: 15.44
+    altitude: 0
+  spacebits_mcmurdo:
+    latitude: -77.83
+    longitude: 166.68
+    altitude: 0
+  organizers_mcmurdo:
+    latitude: -77.83
+    longitude: 166.69
+    altitude: 0
+  perfectblue_mcmurdo:
+    latitude: -77.83
+    longitude: 166.70
+    altitude: 0
+  samurai_mcmurdo:
+    latitude: -77.83
+    longitude: 166.71
+    altitude: 0
+  poland_mcmurdo:
+    latitude: -77.83
+    longitude: 166.72
+    altitude: 0
+  singleevent_mcmurdo:
+    latitude: -77.83
+    longitude: 166.73
+    altitude: 0
+  solarwine_mcmurdo:
+    latitude: -77.83
+    longitude: 166.74
+    altitude: 0
+  weltalles_mcmurdo:
+    latitude: -77.83
+    longitude: 166.75
+    altitude: 0
+  # Science Challenge
+  science-station:
+    latitude: -82.4131
+    longitude: 164.601
+    altitude: 0
+  # DesCrypt Challenge
+  LosAngeles:
+    latitude: 34.0522
+    longitude: -118.244
+    altitude: 0
+  Guam:
+    latitude: 13.4443
+    longitude: 144.794
+    altitude: 0
+  Mingenew:
+    latitude: -29.1902
+    longitude: 115.442
+    altitude: 0
+  Mauritius:
+    latitude: -20.3484
+    longitude: 57.5522
+    altitude: 0
+  Cordoba:
+    latitude: -31.4201
+    longitude: -64.1888
+    altitude: 0
+
+  # Oracle Challenge
+  Melbourne:
+    latitude: 28.0836
+    longitude: -80.6081
+    altitude: 0
+  Hawaii:
+    latitude: 19.0136
+    longitude: -155.663
+    altitude: 0
+  Tokyo:
+    latitude: 35.6762
+    longitude: 139.65
+    altitude: 0
+  Kathmandu:
+    latitude: 27.7172
+    longitude: 85.324
+    altitude: 0
+  Maspalomas:
+    latitude: 27.7606
+    longitude: -15.586
+    altitude: 0
+
+# SATELLITES
+# THE SOLVER WANTS METERS, NOT KILOMETERS
+satellites:
+  cromulans_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 0.0
+  federation_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 14.0
+  spacebits_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 14.0
+  organizers_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 12.0
+  perfectblue_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 10.0
+  samurai_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 8.0
+  poland_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 6.0
+  singleevent_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 4.0
+  solarwine_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 2.0
+  weltalles_sat:
+    a: 7700000
+    e: 0.0
+    i: 75.0
+    raan: 45.0
+    omega: 0.0
+    TA: 0.0

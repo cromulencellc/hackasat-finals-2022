@@ -1,0 +1,5 @@
+pyyaml
+spacepackets
+skyfield
+pytz
+scipy
