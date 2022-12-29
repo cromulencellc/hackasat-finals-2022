@@ -6,6 +6,8 @@ unlimited. AFRL-2022-5934
 This repository contains the open source release for the Hack-a-Sat 3 2022
 final event.
 
+Final scores from the event are posted at https://finals.2022.hackasat.com/
+
 Released artifacts include:
 
 * Source code for all challenges
@@ -29,7 +31,7 @@ Released artifacts *do not* include:
   - [ground_chals](./solvers/ground_chals/) - Solvers for challenges that were considered running on the groundstation
     - [commanding_chals](./solvers/ground_chals/commanding_chals/) - Challenges involving commanding/steering your satellite correctly
   - [satellite_chals](./solvers/satellite_chals) - Solvers for challenges considered running on the satellite
-* [tech papers](./team_writeups/) - Writeups about the game written by the top teams
+* [team writeups](./team_writeups/) - Writeups about the game written by the top teams
 
 ![Challenges](challenges.png)
 
